@@ -1,0 +1,72 @@
+latitude,longitude,Name,Status,MapLabel,MW,Project_Type,Owner,County,City,State,Zip,Cogen_Status,OldName,MapIcon
+42.436149,-122.849501,Biomass One LP,Operational,Biomass One LP,30,Biomass solid fuel,?,Jackson County,WHITE CITY,OR,97503,cogen,,grn_circle
+40.879724,-121.720406,BURNEY FOREST POWER,Operational,Burney Forest Power,31,Biomass solid fuel,Burney Forest Products,Shasta County,BURNEY,CA,96013,cogen,,grn_circle
+40.302842,-121.244088,COLLINS PINE CO. PROJECT,Operational,Collins Pine Biomass Power,12,Biomass solid fuel,Collins Companies,Plumas County,CHESTER,CA,96020,cogen,,grn_circle
+40.481337,-124.104634,EEL RIVER,Operational,Greenleaf Eel River Power,28,Biomass solid fuel,Greenleaf Power (Recycled Energy Development),Humboldt County,SCOTIA,CA,95565,cogen,Scotia Power,grn_circle
+40.473227,-122.328937,KIARA SOLAR (WHEELABRATOR HUDSON),Operational,Shasta Renewables,7.2,Biomass solid fuel,Kiara Solar,Shasta County,ANDERSON,CA,96007,cogen,Wheelabrator Hudson,grn_circle
+41.434612,-122.377895,ROSEBURG FOREST PRODUCTS,Operational,Roseburg Forest Products Biomass Power,12,Biomass solid fuel,Roseburg,Siskiyou County,WEED,CA,96094,cogen,,grn_circle
+35.953929,-119.046308,SIERRA POWER CORP.,Operational,Sierra Biomass Power Corp.,9.5,Biomass solid fuel,Sierra Forest Products,Tulare County,TERRA BELLA,CA,93270,cogen,Terra Bella,grn_circle
+40.876759,-121.701845,SPI  BURNEY,Operational,SPI Burney Biomass Power,20,Biomass solid fuel,SPI,Shasta County,BURNEY,CA,96013,cogen,,grn_circle
+40.472715,-122.323162,SPI ANDERSON,Operational,SPI Anderson Biomass Power,4,Biomass solid fuel,SPI,Shasta County,ANDERSON,CA,96007,cogen,,grn_circle
+40.47185,-122.324034,SPI ANDERSON PROJECT,Active project,SPI Anderson Biomass Power Project,31,Biomass solid fuel,SPI,Shasta County,ANDERSON,CA,96007,cogen,,red_circle
+38.902678,-121.309604,SPI LINCOLN,Operational,SPI Lincoln Biomass Power,18,Biomass solid fuel,SPI,Placer County,LINCOLN,CA,95648,cogen,,grn_circle
+39.940962,-120.909161,SPI QUINCY,Operational,SPI Quincy Biomass Power,25,Biomass solid fuel,SPI,Plumas County,QUINCY,CA,95971,cogen,,grn_circle
+37.965999,-120.318,SPI STANDARD,Operational,SPI Sonora Standard Biomass Power,8,Biomass solid fuel,SPI,Tuolumne County,SONORA,CA,95373,cogen,,grn_circle
+40.805519,-124.195843,FRESHWATER PULP,Non-operational,Freshwater Pulp Biomass Power,50,Chemical recovery,Bob Simpson?,Humboldt County,SAMOA,CA,,cogen,Evergreen pulp,wht_circle
+37.912473,-121.261706,AIR PRODUCTS STOCKTON,Idle,Air Products Stockton Biomass Power,45,"Co-fire or conversion (from coal, petcoke or TDF)",Air Products,San Joaquin County,STOCKTON,CA,95206,cogen,,ylw_circle
+37.943945,-121.330053,DTE STOCKTON (POSDEF),Operational,DTE Stockton Biomass Power,45,"Co-fire or conversion (from coal, petcoke or TDF)",DTE Energy Services,San Joaquin County,STOCKTON,CA,95201,cogen,,grn_circle
+35.576448,-119.005818,MT. POSO COGENERATION,Operational,DTE Mt. Poso Cogen,44,"Co-fire or conversion (from coal, petcoke or TDF)",DTE Energy Services,Kern County,BAKERSFIELD,CA,93308,cogen,,grn_circle
+35.741508,-119.050911,RIO BRAVO JASMIN,Proposal,Rio Bravo Jasmin Proposed Conversion,40,"Co-fire or conversion (from coal, petcoke or TDF)",NAPG,Kern County,BAKERSFIELD,CA,,cogen,,purple_circle
+35.547497,-119.075265,RIO BRAVO POSO,Proposal,Rio Bravo Poso Proposed Conversion,40,"Co-fire or conversion (from coal, petcoke or TDF)",NAPG,Kern County,BAKERSFIELD,CA,,cogen,,purple_circle
+41.475178,-122.829037,CAL FOREST NURSERY,Pilot,Cal Forest Nursery Gasifier Pilot,0.041,Gasification,Cal Forest Nursery,Siskiyou County,ETNA,CA,96027,cogen,,orange_circle
+38.524353,-121.903077,DIXON RIDGE FARMS,Operational,Dixon Ridge Farms Gasifier Power Pilot,0.1,Gasification,Dixon Ridge Farms,Yolo County,WINTERS,CA,95776,cogen,,grn_circle
+37.718988,-120.895545,PHOENIX ENERGY,Operational,Central Valley Ag Grinding,1,Gasification,Phoenix Energy,Stanislaus County,OAKDALE,CA,95361,cogen,,grn_circle
+39.245133,-120.027133,PLACER COUNTY,Cancelled,Placer County Biomass Power Project,2,Gasification,Placer County,Placer County,KINGS BEACH,CA,,cogen,,wht_circle
+39.290828,-120.214074,PLACER COUNTY,Active project,Placer County Biomass Power Project,2,Gasification,Placer County,Placer County,CABIN CREEK,CA,,cogen,,red_circle
+41.132744,-121.137368,BIG VALLEY BIOMASS POWER,Idle,Big Valley Biomass Power,7.5,Biomass solid fuel,?,Lassen County,BIEBER,CA,96009,not cogen,,ylw_circle
+40.877693,-123.994609,BLUE LAKE POWER,Operational,Blue Lake Biomass Power,11,Biomass solid fuel,Renewable Energy Partners,Humboldt County,BLUE LAKE,CA,95525,not cogen,,grn_circle
+40.886347,-124.000079,BLUE LAKE RANCHERIA ,Active Project,Blue Lake Rancheria ,0.75,Biomass solid fuel,Blue Lake Rancheria,Humboldt County,BLUE LAKE,CA,95525,not cogen,,red_circle
+40.909703,-121.639961,BURNEY MOUNTAIN POWER,Idle,Covanta Burney Mtn. Power,11,Biomass solid fuel,Covanta,Shasta County,BURNEY,CA,96013,not cogen,Covanta,ylw_circle
+37.107146,-120.248871,CHOWCHILLA,Operational,Chowchilla Biomass Power,12.5,Biomass solid fuel,London Economics/Global Ampersand,Madera County,CHOWCHILLA,CA,93610,not cogen,,grn_circle
+35.719097,-119.234588,DELANO ENERGY CO.  INC.,Operational,Covanta Delano Power,50,Biomass solid fuel,Covanta,Kern County,DELANO,CA,93215,not cogen,Covanta,grn_circle
+33.586491,-116.087907,DESERT VIEW,Operational,Greenleaf Desert View Power,47,Biomass solid fuel,Greenleaf Power (Recycled Energy Development),Riverside County,MECCA,CA,92254,not cogen,Colmac,grn_circle
+40.79946,-124.20309,DG FAIRHAVEN,Operational,Korea East West Power Fairhaven,18,Biomass solid fuel,Korea East-West Power,Humboldt County,SAMOA,CA,95564,not cogen,,grn_circle
+37.950083,-121.254484,DIAMOND WALNUT,Non-operational,Diamond Walnut Biomass Power,4.5,Biomass solid fuel,Diamond Walnut,San Joaquin County,STOCKTON,CA,95201,not cogen,,wht_circle
+36.569581,-119.418984,DINUBA ENERGY INC.,Operational,Dinuba Energy,12,Biomass solid fuel,"Community Renewable Energy Services, Inc",Tulare County,DINUBA,CA,,not cogen,,grn_circle
+40.368492,-120.264999,HONEY LAKE  POWER,Operational,Greenleaf Honey Lake Power,32,Biomass solid fuel,Greenleaf Power (Recycled Energy Development),Lassen County,WENDEL,CA,96136,not cogen,,grn_circle
+32.906602,-115.51372,IMPERIAL VALLEY RESOURCE RECOVERY PROJECT,Idle,Imperial Valley Resource Recovery Power,18,Biomass solid fuel,Imperial Valley Resource Recovery,Imperial County,IMPERIAL,CA,92251,not cogen,,ylw_circle
+36.861479,-120.338865,MADERA POWER LLC,Idle,Madera Power,28,Biomass solid fuel,"Community Renewable Energy Services, Inc",Fresno County,FIREBAUGH,CA,93622,not cogen,,ylw_circle
+36.755903,-120.365273,MENDOTA BIOMASS POWER LTD,Operational,Covanta Mendota Power,25,Biomass solid fuel,Covanta,Fresno County,MENDOTA,CA,93640,not cogen,Covanta,grn_circle
+37.186982,-120.490162,MERCED POWER (EL NIDO),Operational,Merced Power,12.5,Biomass solid fuel,London Economics/Global Ampersand,Merced County,EL NIDO,CA,95317,not cogen,El Nido,grn_circle
+32.90381,-115.512373,MESQUITE LAKE RESOURCE RECOVERY,Non-operational,Mesquite Lake Resource Recovery Power,18.5,Biomass solid fuel,GreenHunter Energy Inc,Imperial County,BRAWLEY,CA,92227,not cogen,,wht_circle
+40.296983,-121.018053,MT. LASSEN POWER,Idle,Covanta Mt. Lassen Power,11.5,Biomass solid fuel,Covanta,Lassen County,WESTWOOD,CA,96137,not cogen,Covanta,ylw_circle
+39.480996,-121.565567,PACIFIC OROVILLE POWER INC.,Idle,Covanta Pacific Oroville Power,18,Biomass solid fuel,Covanta,Butte County,OROVILLE,CA,95965,not cogen,Covanta,ylw_circle
+37.874644,-120.477546,PACIFIC ULTRAPOWER CHINESE  STATION,Operational,Covanta Pacific Ultrapower Chinese Station,22,Biomass solid fuel,Covanta,Tuolumne County,JAMESTOWN,CA,95327,not cogen,Covanta,grn_circle
+36.688823,-119.723405,RIO BRAVO FRESNO,Operational,Rio Bravo Fresno Biomass Power,25,Biomass solid fuel,NAPG,Fresno County,FRESNO,CA,93725,not cogen,,grn_circle
+38.831829,-121.313601,RIO BRAVO ROCKLIN,Operational,Rio Bravo Rocklin Biomass Power,25,Biomass solid fuel,NAPG,Placer County,ROCKLIN,CA,95648,not cogen,,grn_circle
+37.065354,-119.491147,SIERRA BIOMASS (AUBERRY),Non-operational,Sierra Biomass Power,7.5,Biomass solid fuel,Sierra Biomass LLC,Fresno County,AUBERRY,CA,93602,not cogen,Auberry,wht_circle
+36.416976,-121.315617,SOLEDAD ENERGY,Non-operational,Soledad Energy,13.4,Biomass solid fuel,Soledad Energy? ,Monterey County,SOLEDAD,CA,93960,not cogen,,wht_circle
+39.669937,-120.239409,SPI LOYALTON,Idle,SPI Loyalton Biomass Power,20,Biomass solid fuel,SPI,Sierra County,LOYALTON,CA,96118,not cogen,,ylw_circle
+40.408256,-120.644821,SUSANVILLE,Non-operational,Susanville Biomass Power Project,12.5,Biomass solid fuel,Laidlaw Energy Group,Lassen County,SUSANVILLE,CA,96130,not cogen,,wht_circle
+37.719987,-121.488451,TRACY BIOMASS PLANT,Operational,Greenleaf Tracy Biomass Power,19.4,Biomass solid fuel,Thermal Energy Development Partnership,San Joaquin County,TRACY,CA,95377,not cogen,,grn_circle
+37.6383,-120.999589,VALLEY BIO-ENERGY,Cancelled,N/A,33,Biomass solid fuel,Valley Bio-Energy,Stanislaus County,MODESTO,CA,95350,not cogen,,wht_circle
+39.105574,-122.110131,WADHAM,Operational,Wadham Biomass Power,26.5,Biomass solid fuel,Wadham Energy LP,Stanislaus County,WILLIAMS,CA,95987,not cogen,,grn_circle
+40.429592,-122.278243,WHEELABRATOR SHASTA,Operational,Wheelabrator Shasta Biomass Energy,50,Biomass solid fuel,Wheelabrator Shasta Energy Co,Shasta County,ANDERSON,CA,96007,not cogen,,grn_circle
+38.691304,-121.737132,WOODLAND BIOMASS POWER LTD,Operational,DTE Woodland Biomass Power,25,Biomass solid fuel,DTE Energy Services,Yolo County,WOODLAND,CA,95776,not cogen,,grn_circle
+38.27792,-120.913763,BUENA VISTA BIOMASS POWER,Operational,Buena Vista Biomass Power,18.5,"Co-fire or conversion (from coal, petcoke or TDF)",Buena Vista Biomass,Amador County,IONE,CA,95640,not cogen,,grn_circle
+37.335114,-120.528724,PHOENIX ENERGY,Operational,Phoenix Energy,0.5,Gasification,Phoenix Energy,Merced County,MERCED,CA,95348,not cogen,,grn_circle
+38.721719,-121.7544,WEST BIOFUELS,Pilot,West Biofuels Gasifier Pilot,0.2,Gasification,West Biofuels,Yolo County,WOODLAND,CA,95776,not cogen,,orange_circle
+37.231861,-119.494599,North Fork Project,Active Project,North Fork Project,2,Biomass solid fuel,,Madera County,NORTH FORK,CA,93643,N/A,,red_circle
+42.106133,-123.677315,Rough & Ready Power,Idle,Rough & Ready Power,1.5,Biomass solid fuel,Rough & Ready Lumber,Josephine County,CAVE JUNCTION,OR,97523,N/A,,ylw_circle
+38.37751,-120.523977,Wilseyville Proposed Project,Proposal,Wilseyville Proposed Project,3,Biomass solid fuel,,Calaveras County,WEST POINT,CA,95255,N/A,,purple_circle
+42.179712,-121.798302,COLUMBIA PLYWOOD,Operational,Columbia Plywood,,Thermal,Columbia Forest Products,Klamath County,KLAMATH FALLS,OR,97601,N/A,,grn_circle
+41.523309,-120.66971,Devils Garden Conservation Camp Proposed Project,Proposal,Devils Garden Conservation Camp Proposed Project,0,Thermal,,Modoc County,ALTURAS,CA,96101,N/A,,purple_circle
+39.936666,-120.946199,Quincy Proposed Project,Proposal,Quincy Proposed Project,0,Thermal,,Plumas County,QUINCY,CA,95971,N/A,,purple_circle
+41.731738,-122.589835,TIMBER PRODUCTS,Operational,Timber Products Veneer (Yreka),,Thermal,Timber Products,Siskiyou County,YREKA,CA,,N/A,,grn_circle
+40.78939,-122.802506,Trinity Conservation Camp Proposed Project,Proposal,Trinity River Conservation Camp Proposed Project,0,Thermal,,Trinity County,LEWISTON,CA,96052,N/A,,purple_circle
+32.91631,-115.522232,California Ethanol & Power LLC,Proposal,California Ethanol & Power LLC,49.9,N/A,CE&P,Imperial County,BRAWLEY,CA,92227,N/A,,purple_circle
+42.16992,-121.818424,COLLINS PINE CO. PROJECT,Operational,Collins Pine Biomass (Klamath Falls),,N/A,Collins Pine Company,Klamath County,KLAMATH FALLS,OR,97601,N/A,,grn_circle
+42.176324,-121.809231,Iberdrola Klamath Falls Project,Cancelled,Iberdrola Klamath Falls Project,,N/A,Iberdrola Renewables,Klamath County,KLAMATH FALLS,OR,97601,N/A,,wht_circle
+42.197586,-120.354345,Iberdrola Lakeview Project,Active Project,Iberdrola Lakeview Project,,N/A,Iberdrola Renewables,Lake County,LAKEVIEW,OR,97630,N/A,,red_circle
+42.174472,-121.822306,Klamath Falls Bioenergy Project,Cancelled,Klamath Falls Bioenergy Project,,N/A,,Klamath County,KLAMATH FALLS,OR,97601,N/A,,wht_circle
+40.72493,-122.930638,Trinity River Lbr.,Proposal,Trinity River Lbr.,5,N/A,,Trinity County,WEAVERVILLE,CA,96093,N/A,,purple_circle
