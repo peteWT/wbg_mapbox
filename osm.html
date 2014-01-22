@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+
+google.load("visualization", '1', {packages:['table']});
+google.setOnLoadCallback(drawChart);
+
+
+function drawChart() {
+  var query = new google.visualization.Query(
+      'https://docs.google.com/spreadsheet/ccc?key=0Aul5Em3Jm2k8dHRDZklmSnNDanp1WlRjZWdFOGdubHc&usp=sharing');
+  query.setQuery("select * where D = 'Idle' and M = 'cogen'");
+  query.send(handleQueryResponse);
+}
+
+function handleQueryResponse(response) {
+  if (response.isError()) {
+    alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+    return;
+  }
+
+  var data = response.getDataTable();
+  var table = new google.visualization.Table(document.getElementById('columnchart'));
+  table.draw(data, {showRowNumber: true});
+}
+</script>
+
+
+<title>Data from a Spreadsheet</title>
+</head>
+
+<body>
+<span id='columnchart'></span>
+
+<div id="map" style="width: 800px; height: 800px; position: relative;" class="leaflet-container leaflet-fade-anim" tabindex="0"></div>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+<script src="Leaflet.MakiMarkers.js"></script>
+<script type="text/javascript" src="leaflet_embed.js"></script>
+<script type="text/javascript">
+initmap()
+
+</script>
+</body>
+</html>
