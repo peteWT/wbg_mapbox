@@ -43,25 +43,25 @@
   <input placeholder='facility status' id='search'>
   <script>
   var map = L.mapbox.map('map');
-                // Limit Range of Map View to Only See Available Map Layer work in progress
-              //   map.setMaxBounds([[38.712, -124.227],  [38.774, -120.125]]);
-              // map.maxZoom[6];
-              // map.setZoomRange(1,10);
-              // map.setMaxBounds([[84.67351256610522, -174.0234375], [-58.995311187950925, 223.2421875]]);
-              // map.fitbounds([[84.67351256610522, -174.0234375], [-58.995311187950925, 223.2421875]]);
-              map.setView([39, -121.0], 6);
-              markerLayer = L.mapbox.markerLayer()
-              .addTo(map);
+  markerLayer = L.mapbox.markerLayer()
+  .addTo(map);
 
       // Call Background Layer from Outside Source
-      var layer = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', 
-        {attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'}
-        ).addTo(map);
+      var layer='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+      var layerAttrib='Map data © OpenStreetMap contributors';
+      var osm = new L.TileLayer(layer, {minZoom: 3, maxZoom: 18, attribution: layerAttrib}); 
+      //limit range of map
+      map.setView([37.208, -120.102], 6);
+      // map.setZoom(20);
+      // map.fitBounds([[37.67351256610522, -125.0234375], [40.995311187950925, -120.2421875]]);
+      map.addLayer(osm);
 
-     // opens up search
-     $('#search').keyup(search);
+      // var layer = L.tileLayer('hhttp://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
+      //   {attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'}
+      //   ).addTo(map);
 
-
+      // opens up search
+      $('#search').keyup(search);
         //Functional pull csv marker. utilizes older verion os csv2geoJson.js aka functionaljs
         // $.ajax({
         // you will need to replace this URL with the URL to your CSV file.
@@ -70,7 +70,6 @@
         //         markerLayer.setGeoJSON(csv2geojson.csv2geojson(csv));
         //     }
         // });
-
         // function to deploy tooltips with markers. dependent on betterjs.js csv2geojson.js
         $.ajax({
           url: 'PowerPlant.csv',
@@ -92,56 +91,68 @@
         {
           markerLayer.eachLayer(function(layer) {
 
-            if (layer.feature.properties.Status ==='Operational')
+            var content = 
+            '<h1>' + '<font color="2C49BO">' +layer.feature.properties.MapLabel + '<\/h1>' + '</font>'+ '<hr>' +
+            '<b>Location: </b>' + layer.feature.properties.City +', ' + layer.feature.properties.State +'<br>' +
+            '<b>Facility Type: </b>' + layer.feature.properties.Project_Type + ', '+layer.feature.properties.Cogen_Status + '<br>' +
+            '<b>Output: </b>' + layer.feature.properties.MW + ' MW '+'<br>' +
+            '<b>Status: </b>' + layer.feature.properties.Status + '<br>' +
+            '<b>Alternative Names: </b>' + layer.feature.properties.OldName;
+            layer.bindPopup(content);
 
+            layer.feature.properties['marker-type']='large';
+
+            //adds star if cogeneration plant
+            if (layer.feature.properties.Cogen_Status ==='cogen')
             {
-                  // here you call `bindPopup` with a string of HTML you create - the feature
-                  // properties declared above are available under `layer.feature.properties`
-                  var content = 
-                  '<h1>' + '<font color="2C49BO">' +layer.feature.properties.MapLabel + '<\/h1>' + '</font>'+ '<hr>' +
-                  '<b>Location: </b>' + layer.feature.properties.City +', ' + layer.feature.properties.State +'<br>' +
-                  '<b>Facility Type: </b>' + layer.feature.properties.Project_Type + ', '+layer.feature.properties.Cogen_Status + '<br>' +
-                  '<b>Output: </b>' + layer.feature.properties.MW + ' MW '+'<br>' +
-                  '<b>Status: </b>' + layer.feature.properties.Status + '<br>' +
-                  '<b>Alternative Names: </b>' + layer.feature.properties.OldName;
-                  layer.bindPopup(content);
-                  layer.feature.properties['marker-size']='small';
-                  layer.feature.properties['marker-color'] = '#58FA58';
-                  layer.setIcon(L.mapbox.marker.icon(layer.feature.properties));
-                }
-                else if (layer.feature.properties.Status === 'Idle')
-                {    
-                  '<h1>' +layer.feature.properties.MapLabel + '<\/h1>' + '</font>'+ '<hr>' +
-                  '<b>Location: </b>' + layer.feature.properties.City +', ' + layer.feature.properties.State +'<br>' +
-                  '<b>Facility Type: </b>' + layer.feature.properties.Project_Type + ', '+layer.feature.properties.Cogen_Status + '<br>' +
-                  '<b>Output: </b>' + layer.feature.properties.MW + ' MW '+'<br>' +
-                  '<b>Status: </b>' + layer.feature.properties.Status + '<br>' +
-                  '<b>Alternative Names: </b>' + layer.feature.properties.OldName;
-                  layer.bindPopup(content);
-                  layer.feature.properties['marker-size']='small';
-                  layer.feature.properties['marker-color'] = '#FE9A2E';
-                  layer.setIcon(L.mapbox.marker.icon(layer.feature.properties));
-                }
+              layer.feature.properties['marker-symbol'] = 'harbor';
+              layer.setIcon(L.mapbox.marker.icon(layer.feature.properties));
+            }
+            else
+            {}
+            //changes color based on status
+            if (layer.feature.properties.Status ==='Operational')
+            {
+              layer.feature.properties['marker-color'] = '#33CC00';
+              layer.feature.properties['marker-symbol'] = 'monument';
+              layer.setIcon(L.mapbox.marker.icon(layer.feature.properties));
+            }
+            else if (layer.feature.properties.Status === 'Active Project')
+            {    
+              layer.feature.properties['marker-color'] = '#FFF000';
+              layer.setIcon(L.mapbox.marker.icon(layer.feature.properties));
+            }
+            else if (layer.feature.properties.Status === 'Idle')
+            {    
+              layer.feature.properties['marker-color'] = '#FF9900';
+              layer.setIcon(L.mapbox.marker.icon(layer.feature.properties));
+            }           
+            else if (layer.feature.properties.Status === 'Pilot')
+            {    
+              layer.feature.properties['marker-color'] = '#FF6666';
+              layer.setIcon(L.mapbox.marker.icon(layer.feature.properties));
+            }
+            else if (layer.feature.properties.Status === 'Proposal')
+            {    
+              layer.feature.properties['marker-color'] = '#6633CC';
+              layer.setIcon(L.mapbox.marker.icon(layer.feature.properties));
+            } 
+            else 
+            {        
+              layer.feature.properties['marker-color'] = '#FFFFFF';
+              layer.setIcon(L.mapbox.marker.icon(layer.feature.properties));
+            }
+          });
 
-                else 
-                  {        var content = 
-                    '<h1>' +layer.feature.properties.MapLabel + '<\/h1>' + '</font>'+ '<hr>' +
-                    '<b>Location: </b>' + layer.feature.properties.City +', ' + layer.feature.properties.State +'<br>' +
-                    '<b>Facility Type: </b>' + layer.feature.properties.Project_Type + ', '+layer.feature.properties.Cogen_Status + '<br>' +
-                    '<b>Output: </b>' + layer.feature.properties.MW + ' MW '+'<br>' +
-                    '<b>Status: </b>' + layer.feature.properties.Status + '<br>' +
-                    '<b>Alternative Names: </b>' + layer.feature.properties.OldName;
-                    layer.bindPopup(content);
-                    layer.feature.properties['marker-size']='small';
-                    layer.feature.properties['marker-color'] = '#000';
-                    layer.setIcon(L.mapbox.marker.icon(layer.feature.properties));
-                  }
-                });
 };
+
+
 // https://www.mapbox.com/mapbox.js/example/v1.0.0/show-tooltips-on-hover/ find way to show tooltip on hover.
+
 function search (){
   var searchString = $('#search').val().toLowerCase();
   markerLayer.setFilter(showStatus);
+  // markerLayer.setFilter(showOwner);
 // replicate tooltip popup info window
 $ (poplayer) 
             // markerLayer.setFilter(showStatus);
@@ -151,6 +162,12 @@ function showStatus(feature){
   .toLowerCase()
   .indexOf(searchString) !== -1;
 }
+//possible solution = add additional cell in csv that combines ALL infomration cells and reference the compiled cell in filter.
+// function showOwner(feature){
+//   return feature.properties.Status
+//   .toLowerCase()
+//   .indexOf(searchString) !== -1;
+// }
           // need to find a way to combine multiple search fields into one search box.              
           // function showOwner(feature){
           //     return feature.properties.Owner
